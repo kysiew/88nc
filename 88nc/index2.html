@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script type="text/javascript">
+
+	function checkUrl() {
+		alert("hoho");
+		var request = false;
+		//Firefox and Netscape
+		if (window.XMLHttpRequest) {
+			request = new window.XMLHttpRequest;
+			alert("Firefox and Netscape");
+		}
+		//IE
+		else if (window.ActiveXObject) {
+			request = new window.ActiveXObject("Microsoft.XMLHttp");
+			alert("IE");
+		}
+		alert("hoho2");
+		if (request) {
+			//request.open("GET", "http://www.google.com");
+			request.open("HEAD", "http://www.google.com", true);
+
+			alert("hoho3");
+			request.onreadystatechange = function() {
+				alert("hoho4=>"+request.status);
+				if (request.status == 200 && request.readyState == 4)
+				{
+					//page is there
+					alert("yes");
+				}
+				else if (request.status == 404) {
+					//page is not there
+					alert("no");
+				}
+			}
+			request.send(null);
+		}
+	}
+ </script>
+ </HEAD>
+
+ <BODY onload="checkUrl()">
+  
+ </BODY>
+</HTML>
