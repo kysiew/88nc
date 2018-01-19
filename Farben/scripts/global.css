@@ -1,0 +1,297 @@
+BODY {
+	BACKGROUND: url(../images/pg_bg.jpg) repeat-x left top; MARGIN: 0px; TEXT-ALIGN: center
+}
+.baselayout {
+	MARGIN: 0px auto; WIDTH: 944px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+.basebg {
+	FLOAT: left; BACKGROUND-IMAGE: url(../images/base_bg.jpg); WIDTH: 944px; BACKGROUND-REPEAT: repeat-y; HEIGHT: auto
+}
+.pagetopshadow {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../images/pg_top_grnt.jpg) no-repeat left top; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 944px; PADDING-TOP: 0px; HEIGHT: 17px
+}
+.pagetopshadow IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; WIDTH: 944px; BORDER-BOTTOM: 0px; HEIGHT: 17px
+}
+.pagebotshadow {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../images/pg_bot_grnt.jpg) no-repeat left top; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 944px; PADDING-TOP: 0px; HEIGHT: 11px
+}
+.pageleft {
+	BACKGROUND: url(../images/pg_left_grnt.jpg) no-repeat left top; FLOAT: left; WIDTH: 7px; HEIGHT: 484px
+}
+.pageright {
+	BACKGROUND: url(../images/pg_right_grnt.jpg) no-repeat left top; FLOAT: right; WIDTH: 7px; HEIGHT: 484px
+}
+.pagecenter {
+	FLOAT: left; WIDTH: 930px; TEXT-ALIGN: left
+}
+.PopUpWindowBlock {
+	MARGIN: 0px auto; WIDTH: 570px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left
+}
+.PrintHeaderSection {
+	CLEAR: both; DISPLAY: none
+}
+.sonylogowhitebg {
+	DISPLAY: none; FLOAT: left; WIDTH: 300px
+}
+.CountryNameText {
+	DISPLAY: none; FONT-WEIGHT: bold; FONT-SIZE: 16px; FLOAT: right; WIDTH: 350px; COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+#Header {
+	PADDING-RIGHT: 17px; MARGIN-TOP: 0px; PADDING-LEFT: 17px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; WIDTH: auto; PADDING-TOP: 0px; POSITION: relative; HEIGHT: 60px; BACKGROUND-COLOR: #486958
+}
+#Header .logo {
+	PADDING-LEFT: 0px; FLOAT: left; HEIGHT: auto
+}
+#Header .logo .countryname {
+	PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 17px; VERTICAL-ALIGN: middle; COLOR: #FFFFFF; LINE-HEIGHT: 27px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+#Header .logo .corplogo {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 3px
+}
+#Header .logo .corplogodivided {
+	PADDING-RIGHT: 8px; MARGIN-TOP: 0px; DISPLAY: inline; WIDTH: 6px; PADDING-TOP: 0px; HEIGHT: 61px
+}
+#Header .logo IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+#Header .logo A {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+#Header .logo A:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+#Headerright {
+	FONT-SIZE: 10px; FLOAT: right; WIDTH: 380px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 60px; TEXT-ALIGN: right
+}
+#StaticPrintHeaderSection {
+	DISPLAY: none
+}
+#Printright {
+	FONT-SIZE: 10px; FLOAT: right; WIDTH: 530px; COLOR: #666666; PADDING-TOP: 20px; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 60px; TEXT-ALIGN: right
+}
+#Printright A {
+	FONT-SIZE: 11px; FLOAT: right; COLOR: #0066cc; FONT-FAMILY: Arial,Helvetica,sans-serif; TEXT-DECORATION: none
+}
+#Printright IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; LEFT: -4px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; POSITION: relative; TOP: 2px
+}
+.CountryText {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; RIGHT: 21px; MARGIN: 0px 0px 10px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; POSITION: absolute; TOP: 5px
+}
+.CountryText A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.CountryText A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.CountryText .links {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; COLOR: #666666; PADDING-TOP: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: right
+}
+.CountryText .links A {
+	FONT-SIZE: 10px; COLOR: #4070a1; DIRECTION: ltr; unicode-bidi: embed; TEXT-DECORATION: none
+}
+.CountryText .links A:hover {
+	FONT-SIZE: 10px; COLOR: #4070a1; DIRECTION: ltr; unicode-bidi: embed; TEXT-DECORATION: underline
+}
+.CountryText .name {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 16px; PADDING-BOTTOM: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.CountryText IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.metalinks {
+	MARGIN-TOP: 0px; FONT-SIZE: 10px; RIGHT: 5px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: bottom; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; POSITION: relative; TOP: 41px
+}
+.metalinks A {
+	FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.metalinks A:visited {
+	FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.metalinks A:hover {
+	FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.metalinks IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.errorcontent {
+	FONT-SIZE: 12px; MARGIN: 30px; WIDTH: 800px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 340px
+}
+.errorcontent .Link {
+	CLEAR: both; FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.errorcontent .Link A {
+	COLOR: #4171a1; TEXT-DECORATION: underline
+}
+.errorcontent .Link A:hover {
+	COLOR: #4171a1; TEXT-DECORATION: none
+}
+.GlossaryLink {
+	COLOR: #4070a1; LINE-HEIGHT: 17px; BORDER-BOTTOM: 1px dotted
+}
+.LoadingArea {
+	CLEAR: both; DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN: 20px; COLOR: #4070a1; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+.LoadingArea IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; MARGIN: 0px 6px 0px 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.DisplayStyle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.linkstyle {
+	TEXT-DECORATION: none
+}
+#Menu {
+	CLEAR: both; BACKGROUND-IMAGE: url(../images/menu_off.jpg); MARGIN: 0px; WIDTH: 100%; HEIGHT: 26px; BACKGROUND-COLOR: #b4d5ff
+}
+#Menu .Menuleft {
+	PADDING-LEFT: 17px; FLOAT: left
+}
+#Menu .Menuright {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 0px; FONT-SIZE: 10px; FLOAT: right; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif; WHITE-SPACE: nowrap
+}
+#Menu .Menuright A {
+	COLOR: #ffffff; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+#Menu .Menuright A:hover {
+	COLOR: #ffffff; WHITE-SPACE: nowrap; TEXT-DECORATION: underline
+}
+.searchformtext {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; BORDER-LEFT: #ffffff 1px solid; WIDTH: 130px; COLOR: #000000; MARGIN-RIGHT: 5px; PADDING-TOP: 1px; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.glsText {
+	LINE-HEIGHT: 17px; BORDER-BOTTOM: #4070a1 1px dotted
+}
+#Menu .HomeHdr {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 11px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 300px; COLOR: #ffffff; PADDING-TOP: 5px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+#Menu .usermenu {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 11px; FLOAT: right; PADDING-BOTTOM: 0px; WIDTH: 300px; COLOR: #ffffff; PADDING-TOP: 5px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: right
+}
+#Menu .usermenu A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#Menu .usermenu A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+#Footer {
+	CLEAR: both; MARGIN: 0px 10px 15px; WIDTH: auto
+}
+UNKNOWN {
+	CLEAR: both; MARGIN: 0px 10px 15px; WIDTH: auto
+}
+#Footer .fttop {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 20px; WIDTH: auto; PADDING-TOP: 0px
+}
+#Footer .ftbot {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: auto; PADDING-TOP: 6px
+}
+#Footer .ftleft {
+	FONT-SIZE: 10px; FLOAT: left; COLOR: #666666; MARGIN-RIGHT: 10px; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 20px
+}
+#Footer .ftleft A {
+	VERTICAL-ALIGN: top; COLOR: #666666; TEXT-DECORATION: none
+}
+#Footer .ftleft A:hover {
+	VERTICAL-ALIGN: top; COLOR: #666666; TEXT-DECORATION: underline
+}
+#Footer .ftleft IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+#Footer .ftright {
+	FONT-SIZE: 10px; FLOAT: right; MARGIN-LEFT: 5px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 20px
+}
+#ftdiv {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #cccccc 1px solid
+}
+#TipLayer {
+	FONT-SIZE: 10px; Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute; TOP: -100px
+}
+.FtInfo {
+	CLEAR: both; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.FtInfo A {
+	CLEAR: both; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.FtInfo A:hover {
+	TEXT-DECORATION: underline
+}
+.FtRedTxt {
+	FONT-WEIGHT: bold; COLOR: #ff0000
+}
+.loadingText {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.loadingText IMG {
+	VERTICAL-ALIGN: middle
+}
+.loading {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #fe0000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.loading IMG {
+	VERTICAL-ALIGN: middle
+}
+.searcharrowimg {
+	MARGIN-RIGHT: 10px
+}
+.TopPrintButton {
+	CLEAR: both; DISPLAY: block; BACKGROUND: #ffffff; MARGIN-BOTTOM: 10px; OVERFLOW: hidden; PADDING-TOP: 15px; HEIGHT: 40px; TEXT-ALIGN: center
+}
+.BlueButton {
+	FONT-SIZE: 11px; COLOR: #ffffff; ZOOM: 1; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.BlueButton A {
+	FONT-SIZE: 11px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.BlueButton A:hover {
+	FONT-SIZE: 11px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.BlueButton A:visited {
+	FONT-SIZE: 11px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.BlueButton .MiddleLeft {
+	BACKGROUND-POSITION: left 50%; BACKGROUND-IMAGE: url(../images/blue_button_middle_left.gif); BACKGROUND-REPEAT: no-repeat
+}
+.BlueButton .MiddleRight {
+	BACKGROUND-POSITION: right 50%; BACKGROUND-IMAGE: url(../images/blue_button_middle_right.gif); BACKGROUND-REPEAT: no-repeat
+}
+.BlueButton .TopLeft {
+	BACKGROUND: url(../images/blue_button_left_top.gif) no-repeat left top
+}
+.BlueButton .TopRight {
+	BACKGROUND: url(../images/blue_button_right_top.gif) no-repeat right top
+}
+.BlueButton .BottomRight {
+	BACKGROUND: url(../images/blue_button_right_bottom.gif) no-repeat right bottom
+}
+.BlueButton .BottomLeft {
+	BACKGROUND: url(../images/blue_button_left_bottom.gif) no-repeat left bottom
+}
+.BlueButton .ButtonLabel {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: middle; PADDING-TOP: 4px; TEXT-ALIGN: center
+}
+.TopStaticPrintHeader {
+	DISPLAY: none
+}
+#TopStaticPrintHeader {
+	DISPLAY: none
+}
+#StaticPrintHeaderSection {
+	PADDING-RIGHT: 17px; MARGIN-TOP: 0px; PADDING-LEFT: 17px; PADDING-BOTTOM: 18px; OVERFLOW: hidden; WIDTH: auto; PADDING-TOP: 0px; POSITION: relative; HEIGHT: 60px; BACKGROUND-COLOR: #ffffff
+}
+#StaticPrintHeaderSection .logo {
+	PADDING-LEFT: 0px; FLOAT: left; HEIGHT: auto
+}
+#StaticPrintHeaderSection .logo .countryname {
+	PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 17px; VERTICAL-ALIGN: middle; COLOR: #000000; LINE-HEIGHT: 27px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+#StaticPrintHeaderSection .logo .corplogo {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 3px
+}
+#StaticPrintHeaderSection .logo .corplogodivided {
+	PADDING-RIGHT: 8px; MARGIN-TOP: 0px; DISPLAY: inline; WIDTH: 6px; PADDING-TOP: 0px; HEIGHT: 61px
+}
+#StaticPrintHeaderSection .logo IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}

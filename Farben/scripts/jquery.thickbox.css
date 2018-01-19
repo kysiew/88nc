@@ -1,0 +1,213 @@
+#TB_window {
+	FONT: 10px Arial, Helvetica, sans-serif; COLOR: #333333
+}
+#TB_secondLine {
+	FONT: 9px Arial, Helvetica, sans-serif; COLOR: #666666
+}
+#TB_window A {
+	COLOR: #0066cc; TEXT-DECORATION: none
+}
+#TB_window A:hover {
+	TEXT-DECORATION: underline
+}
+#TB_overlay {
+	Z-INDEX: 1000; LEFT: 0px; WIDTH: 100%; CURSOR: not-allowed; POSITION: fixed; TOP: 0px; HEIGHT: 100%
+}
+.TB_overlayMacFFBGHack {
+	BACKGROUND: url(images/macFFBgHack.png)
+}
+.TB_overlayBG {
+	BACKGROUND: url(images/shadowlight.gif); FILTER: alpha(opacity=80); opacity: 0.8
+}
+ HTML #TB_overlay {
+	Z-INDEX: 1000; POSITION: absolute; ; HEIGHT: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px')
+}
+#TB_window {
+	BORDER-RIGHT: #007fbf 4px solid; PADDING-RIGHT: 1px; BORDER-TOP: #007fbf 4px solid; DISPLAY: none; PADDING-LEFT: 1px; Z-INDEX: 19001; LEFT: 50%; PADDING-BOTTOM: 1px; BORDER-LEFT: #007fbf 4px solid; COLOR: #000000; PADDING-TOP: 0px; BORDER-BOTTOM: #007fbf 4px solid; POSITION: fixed; TOP: 50%; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left
+}
+ HTML #TB_window {
+	; MARGIN-TOP: expression(window.tb_alignTo? 0 : (0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px')); POSITION: absolute
+}
+#TB_window IMG#TB_Image {
+	DISPLAY: block; MARGIN: 42px 15px 15px
+}
+#TB_caption {
+	LEFT: 18px; POSITION: absolute; TOP: 15px
+}
+#TB_closeWindow {
+	FONT-SIZE: 1px; RIGHT: 13px; TEXT-TRANSFORM: capitalize; COLOR: #fff; POSITION: absolute; TOP: 15px; TEXT-ALIGN: right
+}
+#TB_closeWindow A {
+	PADDING-RIGHT: 16px; DISPLAY: block; FONT-SIZE: 11px; BACKGROUND: url(images/btn_close.gif) no-repeat 100% 0%; COLOR: #666; HEIGHT: 1%
+}
+#TB_closeWindow A:hover {
+	TEXT-DECORATION: none
+}
+#TB_closeAjaxWindow {
+	FONT-SIZE: 1px; RIGHT: 13px; TEXT-TRANSFORM: capitalize; COLOR: #e2e2e2; POSITION: absolute; TOP: 13px; TEXT-ALIGN: right
+}
+.in_place#TB_window #TB_closeAjaxWindow {
+	TOP: 17px
+}
+#TB_closeAjaxWindow A {
+	PADDING-RIGHT: 16px; DISPLAY: block; FONT-SIZE: 11px; BACKGROUND: url(images/btn_close.gif) no-repeat 100% 0%; COLOR: #666; HEIGHT: 1%
+}
+#TB_closeAjaxWindow A:hover {
+	TEXT-DECORATION: none
+}
+#TB_ajaxWindowTitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; BACKGROUND: url(images/thickbox_title.gif) no-repeat 0px 0px; PADDING-TOP: 2px; HEIGHT: 33px
+}
+#TB_ajaxWindowTitle SPAN {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 6px; PADDING-TOP: 0px; BACKGROUND-COLOR: #e2e2e2
+}
+#TB_title {
+	PADDING-RIGHT: 13px; PADDING-LEFT: 13px; BACKGROUND: url(images/thickbox_border.gif) #e2e2e2 repeat-x 0px 0px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px; POSITION: relative
+}
+.in_place#TB_window #TB_title {
+	BACKGROUND-POSITION: 1023px 0px; BACKGROUND-IMAGE: url(images/thickbox_border_in_place.gif); OVERFLOW: visible; PADDING-TOP: 10px
+}
+.Centered#TB_window #TB_title {
+	BACKGROUND: url(images/thickbox_border_in_place.gif) #e2e2e2 no-repeat 50% top
+}
+#TB_ajaxContent {
+	CLEAR: both; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BACKGROUND: url(images/thickbox_bg.gif) #fff repeat-x 0px 0px; PADDING-BOTTOM: 15px; OVERFLOW: auto; LINE-HEIGHT: 1.4em; PADDING-TOP: 2px; TEXT-ALIGN: left
+}
+.TB_modal#TB_ajaxContent {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 15px; PADDING-TOP: 15px
+}
+#TB_ajaxContent P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+#TB_ajaxContent INPUT {
+	FONT: 11px Arial, Helvetica, sans-serif
+}
+#TB_ajaxContent SELECT {
+	FONT: 11px Arial, Helvetica, sans-serif
+}
+#TB_ajaxContent TEXTAREA {
+	FONT: 11px Arial, Helvetica, sans-serif
+}
+#TB_ajaxContent INPUT.text {
+	BORDER-RIGHT: #809eba 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #809eba 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #809eba 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #809eba 1px solid
+}
+#TB_load {
+	DISPLAY: none; Z-INDEX: 103; LEFT: 50%; MARGIN: -6px 0px 0px -104px; WIDTH: 208px; POSITION: fixed; TOP: 50%; HEIGHT: 13px
+}
+ HTML #TB_load {
+	; MARGIN-TOP: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px'); POSITION: absolute
+}
+ HTML #TB_HideSelect {
+	BORDER-RIGHT: #007fbf 4px solid; PADDING-RIGHT: 1px; BORDER-TOP: #007fbf 4px solid; PADDING-LEFT: 1px; FILTER: alpha(opacity=0); LEFT: 50%; PADDING-BOTTOM: 1px; BORDER-LEFT: #007fbf 4px solid; COLOR: #000; PADDING-TOP: 0px; BORDER-BOTTOM: #007fbf 4px solid; POSITION: fixed; TOP: 50%; BACKGROUND-COLOR: #000; opacity: 0
+}
+ HTML #TB_HideSelect {
+	
+}
+#TB_iframeContent {
+	CLEAR: both; BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+#TB_ajaxContent STRONG {
+	FONT-WEIGHT: bold
+}
+#TB_ajaxContent DIV.BlueButton A {
+	COLOR: #fff
+}
+#TB_ajaxContent DIV.OrangeButton A {
+	COLOR: #fff
+}
+#TB_ajaxContent DIV.input_submit {
+	OVERFLOW: hidden; WIDTH: 255px; PADDING-TOP: 10px; ZOOM: 1
+}
+#TB_ajaxContent DIV.input_submit INPUT.text {
+	CLEAR: both; FLOAT: left; MARGIN-BOTTOM: 6px; WIDTH: 185px
+}
+#TB_ajaxContent DIV.input_submit DIV.BlueButton {
+	FLOAT: right
+}
+#TB_ajaxContent DIV.label_input {
+	OVERFLOW: hidden; PADDING-TOP: 10px; ZOOM: 1
+}
+#TB_ajaxContent DIV.label_input LABEL {
+	CLEAR: both; PADDING-RIGHT: 5px; FONT-WEIGHT: bold; FLOAT: left; MARGIN-BOTTOM: 6px; WIDTH: 95px
+}
+#TB_ajaxContent DIV.label_input LABEL SPAN {
+	DISPLAY: block; FONT-WEIGHT: normal; COLOR: #9a9a9a; FONT-STYLE: italic
+}
+#TB_ajaxContent DIV.label_input INPUT.text {
+	FLOAT: left; MARGIN-BOTTOM: 6px; WIDTH: 128px
+}
+#TB_ajaxContent DIV.label_input SPAN.text {
+	FLOAT: left; MARGIN-BOTTOM: 6px; WIDTH: 128px
+}
+#TB_ajaxContent DIV.label_input DIV.BlueButton {
+	FLOAT: right
+}
+#TB_ajaxContent DIV.tabled_label_input {
+	PADDING-TOP: 5px
+}
+#TB_ajaxContent DIV.tabled_label_input TD {
+	WIDTH: 144px
+}
+#TB_ajaxContent DIV.tabled_label_input TD.submit {
+	WIDTH: 18%; TEXT-ALIGN: right
+}
+#TB_ajaxContent DIV.tabled_label_input TH {
+	PADDING-BOTTOM: 6px; VERTICAL-ALIGN: top
+}
+#TB_ajaxContent DIV.tabled_label_input TD {
+	PADDING-BOTTOM: 6px; VERTICAL-ALIGN: top
+}
+#TB_ajaxContent DIV.tabled_label_input TH {
+	PADDING-RIGHT: 5px; WIDTH: 32%
+}
+#TB_ajaxContent DIV.tabled_label_input TH LABEL {
+	FONT-WEIGHT: bold
+}
+#TB_ajaxContent DIV.tabled_label_input TH LABEL SPAN {
+	DISPLAY: block; FONT-WEIGHT: normal; COLOR: #9a9a9a; FONT-STYLE: italic
+}
+#TB_ajaxContent DIV.tabled_label_input TD SPAN.text {
+	PADDING-LEFT: 1px
+}
+#TB_ajaxContent DIV.tabled_label_input TD SPAN.error {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 2px; DISPLAY: block; PADDING-LEFT: 20px; BACKGROUND: url(images/error.gif) no-repeat 0em 0.3em; FLOAT: left; PADDING-BOTTOM: 3px; COLOR: #cd0e13; LINE-HEIGHT: 17px; PADDING-TOP: 5px
+}
+#TB_ajaxContent DIV.submit {
+	RIGHT: 15px; OVERFLOW: hidden; BOTTOM: 15px; POSITION: absolute
+}
+#TB_ajaxContent DIV.submit DIV.BlueButton {
+	FLOAT: right
+}
+#TB_ajaxContent P.error {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; BACKGROUND: url(images/error.gif) no-repeat 0px 3px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 3px; COLOR: #cd0e13; PADDING-TOP: 3px
+}
+#TB_ajaxContent DIV.user_id_suggestions {
+	CLEAR: both; MARGIN-TOP: 5px
+}
+#TB_ajaxContent DIV.user_id_suggestions P {
+	FONT-WEIGHT: bold
+}
+#TB_ajaxContent DIV.links {
+	CLEAR: both; PADDING-TOP: 5px
+}
+#TB_ajaxContent DIV.links UL {
+	PADDING-LEFT: 100px
+}
+#TB_ajaxContent DIV.links_submit {
+	CLEAR: both; PADDING-TOP: 5px
+}
+#TB_ajaxContent DIV.links_submit UL {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 90px; FLOAT: left; MARGIN: 0px; WIDTH: 144px
+}
+#TB_ajaxContent DIV.links_submit DIV.BlueButton {
+	FLOAT: right; PADDING-TOP: 5px
+}
+#TB_ajaxContent DIV.divider {
+	BORDER-TOP: #aeaeae 2px solid; MARGIN: 15px 0px 7px
+}
+.yesbutton {
+	FLOAT: left; WIDTH: 80px; MARGIN-RIGHT: 10px
+}
+.nobutton {
+	FLOAT: left; WIDTH: 80px; MARGIN-RIGHT: 10px
+}

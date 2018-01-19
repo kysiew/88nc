@@ -1,0 +1,142 @@
+_menuCloseDelay=400           // The time delay for menus to remain visible on mouse out
+_menuOpenDelay=100            // The time delay before menus open on mouse over
+_followSpeed=5                // Follow scrolling speed
+_followRate=40                // Follow scrolling Rate
+_subOffsetTop=0              // Sub menu top offset
+offsetTop=9
+_scrollAmount=3               // Only needed for Netscape 4.x
+_scrollDelay=20               // Only needed for Netcsape 4.x
+_subOffsetLeft=0            // Sub menu left offset
+	
+with(menuStyle=new mm_style()){
+	onbgcolor="#25462c";
+	oncolor="#FFFFFF";
+	offbgcolor="#458152";
+	offcolor="#FFFFFF";
+	bordercolor="#7abc88";
+	borderstyle="solid";
+	borderwidth=1;
+	separatorcolor="#a0d83f";
+	separatorsize="1";
+	padding=4;
+	fontsize="10";
+	fontstyle="normal";
+	fontfamily="verdana";
+	headercolor="#000000";
+	headerbgcolor="#ffffff";
+	subimage="images/icon_pulldownarrow.gif";
+	subimagepadding="2";
+}
+
+horizontalStyle= new copyOf(menuStyle)
+horizontalStyle.offbgcolor="#8ea9b6"
+horizontalStyle.offcolor="#ffffff"
+horizontalStyle.oncolor="#24588a"
+horizontalStyle.separatorimage="images/menu_div.jpg";
+horizontalStyle.separatorsize="2";
+horizontalStyle.itemheight="26";
+horizontalStyle.bgimage="images/menu_off.jpg";
+horizontalStyle.overbgimage="images/menu_on.jpg";
+horizontalStyle.borderwidth=0;
+horizontalStyle.padding=0;
+horizontalStyle.fontweight="bold";
+horizontalStyle.fontsize="10";
+horizontalStyle.subimage="";
+
+	
+
+with(milonic=new menuname("Home")){
+	style=menuStyle;
+	overflow="scroll";
+}
+				
+with(milonic=new menuname("Corporate")){
+	style=menuStyle;
+	overflow="scroll";
+	
+	aI("text= &nbsp;Corporate Profile&nbsp;;url=corporate.php;;");
+	aI("text= &nbsp;Careers&nbsp;;url=careers.php;;");
+	aI("text= &nbsp;Corporate Blog&nbsp;;url=blog.php;;");			               
+}
+				
+with(milonic=new menuname("Parts &amp; Assessories")){
+	style=menuStyle;
+	overflow="scroll";
+				
+	aI("text= &nbsp;Water Dispensing Accessories&nbsp;;url=waterdisp.php;;");
+	aI("text= &nbsp;Timers &amp; Assessories&nbsp;;url=timerasses.php;;");
+	aI("text= &nbsp;In Line Filters&nbsp;;url=inlinefilter.php;;");
+	aI("text= &nbsp;Tube Joints and Connections&nbsp;;url=tubesjoints.php;;");
+	aI("text= &nbsp;Other Assessories&nbsp;;url=otherasses.php;;");
+}
+				
+with(milonic=new menuname("Sets")){
+	style=menuStyle;
+	overflow="scroll";
+	
+	aI("text= &nbsp;DIY Sets&nbsp;;url=diyset.php;;");	            
+	aI("text= &nbsp;Customised Orders&nbsp;;url=customizedorders.php;;");			               		               
+}
+				
+with(milonic=new menuname("About Garden Automation")){
+	style=menuStyle;
+	overflow="scroll";
+	
+	aI("text= &nbsp;How It Works&nbsp;;url=howitwork.php;;");
+	aI("text= &nbsp;General Benefits&nbsp;;url=genbenefit.php;;");	
+	aI("text= &nbsp;System Capabilities&nbsp;;url=syscapa.php;;");				               
+}
+				
+with(milonic=new menuname("Where To Buy")){
+	style=menuStyle;
+	overflow="scroll";
+	
+	aI("text= &nbsp;Orders&nbsp;;url=mailorder.php;;");	
+	aI("text= &nbsp;Product List&nbsp;;url=productlist.php;;");			               
+}
+				
+with(milonic=new menuname("Technical Support")){
+	style=menuStyle;
+	overflow="scroll";
+				
+ 	aI("text= &nbsp;Installation Guides - DIY sets&nbsp;;url=instlguide.php;;");		  		               
+	aI("text= &nbsp;Installation and Maintenance Services&nbsp;;url=instlservice.php;;");	               
+	aI("text= &nbsp;Product Warranty&nbsp;;url=prodwarranty.php;;");	               
+	aI("text= &nbsp;Cost Estimate&nbsp;;url=costestimate.php;;");
+	aI("text= &nbsp;Technical Forum&nbsp;;url=http://farbenwateringsystem.forumms.net;target=_blank;");
+}
+				
+with(milonic=new menuname("Galleries")){
+	style=menuStyle;
+	overflow="scroll";
+		  		               
+	aI("text= &nbsp;Photo Gallery&nbsp;;url=minishowcase/index.php;target=_blank;");	  		               
+	aI("text= &nbsp;Video Collection&nbsp;;url=videogallery.php;target=_blank;");
+}
+				
+with(milonic=new menuname("Contact")){
+	style=menuStyle;
+	overflow="scroll";
+		  		               
+	aI("text= &nbsp;Location Map&nbsp;;url=contactus.php;;");	  		               
+	aI("text= &nbsp;FAQ&nbsp;;url=faq.php;;");
+}
+				
+with(milonic=new menuname("Main Menu")) {
+	alwaysvisible=1;
+	orientation="horizontal";
+	style=horizontalStyle;
+	position="relative";		                                                    
+	
+	aI("text=&nbsp;&nbsp;Home&nbsp;&nbsp;;bgimage=images/menu_off.jpg;overbgimage=images/menu_on.jpg;showmenu=`Home`;url=index.php;");	
+	aI("text=&nbsp;&nbsp;Corporate&nbsp;&nbsp;;bgimage=images/menu_off.jpg;overbgimage=images/menu_on.jpg;showmenu=`Corporate`;url=#;");				
+	aI("text=&nbsp;&nbsp;Parts &amp; Assessories&nbsp;&nbsp;;bgimage=images/menu_off.jpg;overbgimage=images/menu_on.jpg;showmenu=`Parts &amp; Assessories`;url=#;");					
+	aI("text=&nbsp;&nbsp;Sets&nbsp;&nbsp;;bgimage=images/menu_off.jpg;overbgimage=images/menu_on.jpg;showmenu=`Sets`;url=#;");					
+	aI("text=&nbsp;&nbsp;About Garden Automation&nbsp;&nbsp;;bgimage=images/menu_off.jpg;overbgimage=images/menu_on.jpg;showmenu=`About Garden Automation`;url=#;");					
+	aI("text=&nbsp;&nbsp;Where To Buy&nbsp;&nbsp;;bgimage=images/menu_off.jpg;overbgimage=images/menu_on.jpg;showmenu=`Where To Buy`;url=#;");					
+	aI("text=&nbsp;&nbsp;Technical Support&nbsp;&nbsp;;bgimage=images/menu_off.jpg;overbgimage=images/menu_on.jpg;showmenu=`Technical Support`;url=#;");					
+	aI("text=&nbsp;&nbsp;Galleries&nbsp;&nbsp;;bgimage=images/menu_off.jpg;overbgimage=images/menu_on.jpg;showmenu=`Galleries`;url=#;");						
+	aI("text=&nbsp;&nbsp;Contact&nbsp;&nbsp;;bgimage=images/menu_off.jpg;overbgimage=images/menu_on.jpg;showmenu=`Contact`;url=#;");								
+		  		         
+}
+drawMenus()
