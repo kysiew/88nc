@@ -1,0 +1,181 @@
+
+<HTML>
+<HEAD>
+<title>Beauty by Essens</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta name="description" content="">
+<meta name="keywords" content="body care">
+<script type="text/javascript" src="includes/FunctionJs.js"></script>
+<script src="includes/jquery-1.2.1.pack.js" type="text/javascript"></script>
+<script src="includes/jquery-easing.1.2.pack.js" type="text/javascript"></script>
+<script src="includes/jquery-easing-compatibility.1.2.pack.js" type="text/javascript"></script>
+<script src="includes/coda-slider.1.1.1.pack.js" type="text/javascript"></script>
+<script>
+
+function LoadMenuBiossentials() 
+{	
+	window.Menu_SignatureTreatment = new Menu("Signature Treatment",180,22,"tahoma",12,"#ffffff","#197973","#a0d535","#ffffff","left","middle",4,0,1000,-5,17,true,true,true,1,true,true);
+	Menu_SignatureTreatment.addMenuItem("Face","window.open('serv_signtreatment_face.html','_self');");
+	Menu_SignatureTreatment.addMenuItem("Body","window.open('serv_signtreatment_body.html','_self');");
+	Menu_SignatureTreatment.hideOnMouseOut=true;
+	Menu_SignatureTreatment.menuBorder=1;
+	Menu_SignatureTreatment.menuLiteBgColor='#197973';
+	Menu_SignatureTreatment.menuBorderBgColor='#197973';
+	Menu_SignatureTreatment.bgColor='#ffffff';
+	
+	window.Menu_Service = new Menu("Services",180,22,"tahoma",12,"#ffffff","#197973","#a0d535","#ffffff","left","middle",4,0,1000,-5,17,true,true,true,1,true,true);
+	Menu_Service.addMenuItem(Menu_SignatureTreatment);
+	Menu_Service.addMenuItem("Facial Treatment","window.open('serv_facialtreatment.html','_self');");
+	Menu_Service.addMenuItem("Eye Treatment","window.open('serv_eyetreatment.html','_self');");
+	Menu_Service.addMenuItem("Body Treatment","window.open('serv_bodytreatment.html','_self');");
+	Menu_Service.addMenuItem("Hair Removal","window.open('serv_hairremoval.html','_self');");
+	Menu_Service.hideOnMouseOut=true;
+	Menu_Service.menuBorder=1;
+	Menu_Service.menuLiteBgColor='#197973';
+	Menu_Service.menuBorderBgColor='#197973';
+	Menu_Service.bgColor='#ffffff';
+	
+	Menu_Service.writeMenus();
+
+}		
+</script>
+
+<script>
+function Alert(intAlertTypePar, strAlertMessagePar)
+{
+	AlertParameters.strMessage = strAlertMessagePar;
+	return window.showModalDialog('Alert.asp?AlertType=' + intAlertTypePar, AlertParameters, "dialogWidth:350px; dialogHeight:150px; status:no; help:no");
+}
+function NewAlert(StrPath,intAlertTypePar, strAlertMessagePar)
+{
+	AlertParameters.strMessage = strAlertMessagePar;
+	return window.showModalDialog(StrPath + 'includes/Alert.asp?AlertType=' + intAlertTypePar, AlertParameters, "dialogWidth:350px; dialogHeight:150px; status:no; help:no");
+}
+
+function Trim(StrValue){
+  	var st = StrValue;
+  	while ((st.length > 0) && (st.charAt(0) == " ")) 
+		st = st.substring(1, st.length);
+  	while ((st.length > 0) && (st.charAt(st.length-1) == " "))    
+    	st = st.substring(0, st.length-1);  
+  	return st;
+}
+  
+function charCheck()
+{
+	var e = window.event
+	//alert(e.keyCode);
+	if (e.keyCode<46 || e.keyCode>57)
+	e.keyCode="0"
+}
+function AlertParameters()
+{
+	var strMessage;
+}
+
+</script>
+<script type="text/javascript">
+	jQuery(window).bind("load", function() {
+		jQuery("div#slider1").codaSlider()
+		// jQuery("div#slider2").codaSlider()
+		// etc, etc. Beware of cross-linking difficulties if using multiple sliders on one page.
+	});
+</script>
+</HEAD>
+
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" background="images/bg1.jpg" style="background-repeat:repeat-x">
+<script type="text/javascript">LoadMenuBiossentials()</script>
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+    <TR>
+     	<TD width=50%>
+			<table border="0" style="border-collapse:collapse" width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<Tr>
+					<TD width=99% bgcolor=#c3c9c4></TD>
+					<TD width="1px" bgcolor=#686868></TD>
+				</TR>
+			</table>
+		</TD>
+      	<TD>
+        	<TABLE WIDTH="1100" border="0" bordercolor="#197973" CELLSPACING="0" CELLPADDING="0">
+		      	<TR>
+			      	<TD>
+				      	<TABLE "border="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+				        	<TR style="background-color: #ffffff;">
+				          		<TD align=left>
+				            		&nbsp;&nbsp;&nbsp;<a href="index.html"><img src="images/BeautyByEssens_Logo.gif" border="0"></a>
+				          		</TD>
+				        	</TR>
+				        	<TR style="height:28px; background-color: #78a718;">
+								<TD align="left" width=100% background="images/footer1.gif">
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="aboutus.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">About Us</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a name="link1" onMouseOver="MM_showMenu(window.Menu_Service,0,20,null,'link1')" onMouseOut="MM_startTimeout();"><font face="arial" size="2" color="#ffffff">Services</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="products.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">Products</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="promotions.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">Events & Promotions</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="testimonials.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">Testimonials</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="contactus.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">Contact Us</font></a>
+								</TD>
+							</TR>
+				        	<TR style="background-color: #FFFFFF;">
+				          		<TD align="center"><img src="images/aboutus.jpg"></TD>
+				        	</TR>
+				        	<TR style="background-color: #78a718;">
+				          		<TD align="center">&nbsp;</TD>
+				        	</TR>
+				        	<TR style="height:300px; background-color: #FFFFFF;">
+				          		<TD align="left">
+				          			<table CELLSPACING="0" CELLPADDING="0">
+				          				<tr valign="top">
+				          					<td style="background-color: #FFFFFF;"><img src="images/contactus_left.jpg"></td>
+				          					<td width="20">&nbsp;&nbsp;</td>
+				          					<td align="left">
+				          						<br/><font face="arial" size="5" color="#aa7047"><b>Contact Us</b></font><br/><br/>
+				          						<p align=justify><font face="arial" size="2" color="#000000">
+				          							29-1, Jalan USJ10/1 Taipan,<br/>
+				          							47620 Subang Jaya, Selangor.<br/><br/>
+				          							<b>Business Hours:</b><br/>
+				          							Tuesday to Friday: 11:00am to 6:00pm<br/>
+				          							Saturday: 10:30am to 5:00pm<br/>
+				          							Sunday: 11:00am to 5:00pm<br/>
+				          							Closed on every Monday, 2nd Sunday of the month and certain Public Holidays.<br/><br/>
+				          							<b>Website</b>: <a href="http://www.essens.com.my">www.essens.com.my</a><br/>
+				          							<b>Email</b>: <a href="mailto:info@essens.com.my">info@essens.com.my</a><br/><br/>
+				          							<b>Tel:</b> 603-5636 1801<br/><br/>
+				          							<iframe style="border-width:1px; border-style:solid; border-color:Black;" width="640" height="480" frameborder="1" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.my/maps/ms?msa=0&amp;msid=203252346622292791502.0004b77a6ff417bff3261&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=3.049197,101.584986&amp;spn=0.005143,0.006866&amp;z=17&amp;iwloc=0004b77a7392662eee2ee&amp;output=embed"></iframe><br /><small>View <a href="http://maps.google.com.my/maps/ms?msa=0&amp;msid=203252346622292791502.0004b77a6ff417bff3261&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=3.049197,101.584986&amp;spn=0.005143,0.006866&amp;z=17&amp;iwloc=0004b77a7392662eee2ee&amp;source=embed" style="color:#0000FF;text-align:left">Beauty by Essens</a> in a larger map</small><br/><br/>
+												</font></p>
+				          					</td>
+				          					<td width="20">&nbsp;&nbsp;</td>
+				          				</tr>
+				          			</table>
+				          		</TD>
+				        	</TR>
+							<TR style="height:40px;">
+								<td background="images/footer1.gif">
+									<table border="0" width=100% height=100% cellpadding="0" cellspacing="0">
+										<TR valign="center">
+											<TD width=90% align="left"><font face="arial" size="1" color="#ffffff">
+												&nbsp;&nbsp;&nbsp;Copyright 2014 &copy; Beauty by Essens. All Rights Reserved.</font></td>
+											<TD width=10% align="center">
+												<a href="http://www.facebook.com/pages/Beauty-by-Essens/187859473066" target="_blank"><img border="0" src="images/fb.jpeg"></a>&nbsp;&nbsp;&nbsp;</td>				
+										</TR>
+									</table>
+								</td>
+								
+							</TR>
+				      	</TABLE>
+				  	</TD>
+				</TR>
+			</TABLE>
+		</TD>
+		<TD width=50%>
+			<table border="0" style="border-collapse:collapse" width=100% height=100% cellpadding="0" cellspacing="0">
+				<Tr>
+					<TD width="1px" bgcolor=#686868></TD>
+					<TD width=99% bgcolor=#c3c9c4></TD>					
+				</TR>
+			</table>
+		</TD>
+	</TR>
+</TABLE>
+
+</HTML>	

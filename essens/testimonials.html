@@ -1,0 +1,199 @@
+
+<HTML>
+<HEAD>
+<title>Beauty by Essens</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta name="description" content="">
+<meta name="keywords" content="body care">
+<!--LINK rel="stylesheet" type="text/css" href="includes/style.css">
+<LINK rel="stylesheet" type="text/css" href="includes/coda-slider.css"-->
+<script type="text/javascript" src="includes/FunctionJs.js"></script>
+<script src="includes/jquery-1.2.1.pack.js" type="text/javascript"></script>
+<script src="includes/jquery-easing.1.2.pack.js" type="text/javascript"></script>
+<script src="includes/jquery-easing-compatibility.1.2.pack.js" type="text/javascript"></script>
+<script src="includes/coda-slider.1.1.1.pack.js" type="text/javascript"></script>
+<script>
+
+function LoadMenuBiossentials() 
+{	
+	window.Menu_SignatureTreatment = new Menu("Signature Treatment",180,22,"tahoma",12,"#ffffff","#197973","#a0d535","#ffffff","left","middle",4,0,1000,-5,17,true,true,true,1,true,true);
+	Menu_SignatureTreatment.addMenuItem("Face","window.open('serv_signtreatment_face.html','_self');");
+	Menu_SignatureTreatment.addMenuItem("Body","window.open('serv_signtreatment_body.html','_self');");
+	Menu_SignatureTreatment.hideOnMouseOut=true;
+	Menu_SignatureTreatment.menuBorder=1;
+	Menu_SignatureTreatment.menuLiteBgColor='#197973';
+	Menu_SignatureTreatment.menuBorderBgColor='#197973';
+	Menu_SignatureTreatment.bgColor='#ffffff';
+	
+	window.Menu_Service = new Menu("Services",180,22,"tahoma",12,"#ffffff","#197973","#a0d535","#ffffff","left","middle",4,0,1000,-5,17,true,true,true,1,true,true);
+	Menu_Service.addMenuItem(Menu_SignatureTreatment);
+	Menu_Service.addMenuItem("Facial Treatment","window.open('serv_facialtreatment.html','_self');");
+	Menu_Service.addMenuItem("Eye Treatment","window.open('serv_eyetreatment.html','_self');");
+	Menu_Service.addMenuItem("Body Treatment","window.open('serv_bodytreatment.html','_self');");
+	Menu_Service.addMenuItem("Hair Removal","window.open('serv_hairremoval.html','_self');");
+	Menu_Service.hideOnMouseOut=true;
+	Menu_Service.menuBorder=1;
+	Menu_Service.menuLiteBgColor='#197973';
+	Menu_Service.menuBorderBgColor='#197973';
+	Menu_Service.bgColor='#ffffff';
+	
+	Menu_Service.writeMenus();
+
+}		
+</script>
+
+<script>
+function Alert(intAlertTypePar, strAlertMessagePar)
+{
+	AlertParameters.strMessage = strAlertMessagePar;
+	return window.showModalDialog('Alert.asp?AlertType=' + intAlertTypePar, AlertParameters, "dialogWidth:350px; dialogHeight:150px; status:no; help:no");
+}
+function NewAlert(StrPath,intAlertTypePar, strAlertMessagePar)
+{
+	AlertParameters.strMessage = strAlertMessagePar;
+	return window.showModalDialog(StrPath + 'includes/Alert.asp?AlertType=' + intAlertTypePar, AlertParameters, "dialogWidth:350px; dialogHeight:150px; status:no; help:no");
+}
+
+function Trim(StrValue){
+  	var st = StrValue;
+  	while ((st.length > 0) && (st.charAt(0) == " ")) 
+		st = st.substring(1, st.length);
+  	while ((st.length > 0) && (st.charAt(st.length-1) == " "))    
+    	st = st.substring(0, st.length-1);  
+  	return st;
+}
+  
+function charCheck()
+{
+	var e = window.event
+	//alert(e.keyCode);
+	if (e.keyCode<46 || e.keyCode>57)
+	e.keyCode="0"
+}
+function AlertParameters()
+{
+	var strMessage;
+}
+
+</script>
+<script type="text/javascript">
+	jQuery(window).bind("load", function() {
+		jQuery("div#slider1").codaSlider()
+		// jQuery("div#slider2").codaSlider()
+		// etc, etc. Beware of cross-linking difficulties if using multiple sliders on one page.
+	});
+</script>
+</HEAD>
+
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" background="images/bg1.jpg" style="background-repeat:repeat-x">
+<script type="text/javascript">LoadMenuBiossentials()</script>
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+    <TR>
+     	<TD width=50%>
+			<table border="0" style="border-collapse:collapse" width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<Tr>
+					<TD width=99% bgcolor=#c3c9c4></TD>
+					<TD width="1px" bgcolor=#686868></TD>
+				</TR>
+			</table>
+		</TD>
+      	<TD>
+        	<TABLE WIDTH="1100" border="0" bordercolor="#197973" CELLSPACING="0" CELLPADDING="0">
+		      	<TR>
+			      	<TD>
+				      	<TABLE "border="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+				        	<TR style="background-color: #ffffff;">
+				          		<TD align=left>
+				            		&nbsp;&nbsp;&nbsp;<a href="index.html"><img src="images/BeautyByEssens_Logo.gif" border="0"></a>
+				          		</TD>
+				        	</TR>
+				        	<TR style="height:28px; background-color: #78a718;">
+								<TD align="left" width=100% background="images/footer1.gif">
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="aboutus.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">About Us</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a name="link1" onMouseOver="MM_showMenu(window.Menu_Service,0,20,null,'link1')" onMouseOut="MM_startTimeout();"><font face="arial" size="2" color="#ffffff">Services</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="products.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">Products</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="promotions.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">Events & Promotions</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="testimonials.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">Testimonials</font></a>
+									&nbsp;&nbsp;&nbsp;<img border="0" src="images/blue_dot.gif">&nbsp;<a href="contactus.html" style="text-decoration:none;"><font face="arial" size="2" color="#ffffff">Contact Us</font></a>
+								</TD>
+							</TR>
+				        	<TR style="background-color: #FFFFFF;">
+				          		<TD align="center"><img src="images/testimonials.jpg"></TD>
+				        	</TR>
+				        	<TR style="background-color: #78a718;">
+				          		<TD align="center">&nbsp;</TD>
+				        	</TR>
+				        	<TR style="height:300px; background-color: #FFFFFF;">
+				          		<TD align="left">
+				          			<table CELLSPACING="0" CELLPADDING="0">
+				          				<tr valign="top">
+				          					<td style="background-color: #FFFFFF;"><img src="images/testimonials_left.jpg"></td>
+				          					<td width="20">&nbsp;&nbsp;</td>
+				          					<td align="left">
+				          						<br/><font face="arial" size="5" color="#aa7047"><b>Testimonials</b></font><br/><br/>
+				          						<p align="justify"><font face="arial" size="2" color="#000000">
+				          							<font color="blue">I am very proud to have received such complementary testimonials from just some of my satisfied clients<br/><br/></font>
+
+													<i>Beauty is skin deep…  You are a kind and wonderful person as well as a fantastic therapist. Your sincerity and connection to the client are shown through your healing hands. You want nothing but the best for your client.<br/>Thank you!<br/></i>
+				          							<b>June Cheah, Canberra Australia</b><br/><br/>
+													<i>I have not gone for any facial treatment when I was in my 20’s. After I have gone through facial treatment at Essens, I couldn't stop coming. I have really enjoy my sessions here. Keep up the good work.<br/>Love,<br/></i>
+													<b>Margaret Pan, USJ3</b><br/><br/>
+													<i>Beauty by Essens, a beauty one stop centre, though small but unique. Staff are less but professional. Every customer is individually taken care of by their tender and care.  You will feel that you are important to them. You will also feel the kindness and passionate in their job and services for being their customer here. In addition, you will experience new things all the time, for they always create new things for customers.<br/></i>
+													<b>Chen Hoy Shan, Puchong</b><br/><br/>
+													<i>I personally find Careen the best for hair waxing. She follows the hair growth very diligently to avoid ingrown hair and now, my hair (underarms etc) have become finer and its nice!!! Its also pain-free and since I discovered Essens, I have come here and remained here for waxing.<br/>What differentiates Careen is the way she does it; as though she is doing it for herself– the care & love she puts in her services is great! Also, she updates herself with courses to improve knowledge & skills, so here’s a great place to be.</i> - <b>Aiswarya Preya, Putra Heights</b><br/><br/>
+													<i>Essens has given me the important essence to be more confidence. I’ve been a customer since 2008 and amazingly I can see improvement on my face. Less pimples and less scars.<br/></i>
+													<b>Puteri Shafinez, PJ</b><br/><br/>
+													<i>Few years back when I was passing by, I thought I’ll give it a trial and now I am still with you. Besides doing my facial, I can relax for an hour with your friendly service & smile. Love the environment, enjoy talking to you as it is soothing and able to release my working pressure. So you will see more of me in years to come.<br/></i>							
+													<b>Loke Kwai Ching, USJ20</b><br/><br/>
+													<i>Its been 7 years since I started my 1st facial here. There’s been so much improvement on my skin conditions. From easily congested & oily skin tone and now I  realized a glowing skin tone. Every time I come for facial is just like a normal hang out with old friends.<br/></i>
+													<b>Eunice Toh, Taman Kinrara</b><br/><br/>
+													<i>A date with Essens is a date in my diary I always look forward to cos I consider it as a treat to myself. And I deserves the best treat! All the best.<br/></i>
+													<b>Raja Nor Zihan, USJ 11</b><br/><br/>
+													<i>Every staff here are friendly and professional! Facial packages introduced in the salon are well catered to the customer’s skin and needs. Will definitely have my support all time! Oh yea love the sms reminder.<br/></i>
+													<b>Violet Wong, A customer since 2002</b><br/><br/>
+													<i>I have always felt comfortable at your place, even on my very first visit. I still remembered, the first visit was to do my eyebrow trimming, whereby you have made me remember to come again and again to do facial here.<br/></i>
+													<b>Phoebe Lau, A customer since 2003</b><br/><br/>
+													<i>Dear Essens,<br/>
+													Thank you for your excellent services you have provided all these years and enrich my experiences here with you.  Your friendly manners & excellent facial techniques are also essential as you have made me feel comfortable & very satisfied. Despite the hard to find parking, each facial is so much guaranteed you let me bring home with. The products recommended is based on each personal skin-good products!  Thank you for offering a wide range of services & products we can choose/tailored to us.  We love you!<br/>
+													To other customers/readers, Enjoy your time here with no regrets.<br/></i>
+													<b>Stephanie Tan, a customer since 2004</b><br/><br/>
+													<i>You guys rock at facial-ing!  Very relaxing.  And, very funny both of you can make us sleep!  Anyway so far I have been here, the sweets are yummy, the place is very pretty and your facial the bomb!!<br/></i>
+													<b>Rowena, started facial at age 12</b><br/><br/>
+												</p>
+				          					</td>
+				          					<td width="20">&nbsp;&nbsp;</td>
+				          				</tr>
+				          			</table>
+				          		</TD>
+				        	</TR>
+							<TR style="height:40px;">
+								<td background="images/footer1.gif">
+									<table border="0" width=100% height=100% cellpadding="0" cellspacing="0">
+										<TR valign="center">
+											<TD width=90% align="left"><font face="arial" size="1" color="#ffffff">
+												&nbsp;&nbsp;&nbsp;Copyright 2014 &copy; Beauty by Essens. All Rights Reserved.</font></td>
+											<TD width=10% align="center">
+												<a href="http://www.facebook.com/pages/Beauty-by-Essens/187859473066" target="_blank"><img border="0" src="images/fb.jpeg"></a>&nbsp;&nbsp;&nbsp;</td>				
+										</TR>
+									</table>
+								</td>
+								
+							</TR>
+				      	</TABLE>
+				  	</TD>
+				</TR>
+			</TABLE>
+		</TD>
+		<TD width=50%>
+			<table border="0" style="border-collapse:collapse" width=100% height=100% cellpadding="0" cellspacing="0">
+				<Tr>
+					<TD width="1px" bgcolor=#686868></TD>
+					<TD width=99% bgcolor=#c3c9c4></TD>					
+				</TR>
+			</table>
+		</TD>
+	</TR>
+</TABLE>
+
+</HTML>	
