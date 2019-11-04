@@ -3,7 +3,7 @@ $domain = $_SERVER["SERVER_NAME"];
 if (($domain == "www.88nc.net" ||
    $domain == "88nc.net") )  { 
    Header( "HTTP/1.1 301 Moved Permanently" ); 
-   header("location: http://www.88nc.net/88nc/"); 
+   header("location: http://test-skyweb.apps.us-east-2.starter.openshift-online.com/88nc/"); 
 }
 
 else if (($domain == "www.estheria.my"||
